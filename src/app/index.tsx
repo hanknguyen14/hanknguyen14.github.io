@@ -14,6 +14,11 @@ import { GlobalStyle } from 'styles/global-styles';
 
 import { HomePage } from './pages/HomePage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
+import { SideBar } from './components/SideBar/Loadable';
+import { Person } from './components/Person/Loadable';
+import { Content } from './components/Content/Loadable';
+import { LeftLayout } from './components/LeftLayout/Loadable';
+import { RightLayout } from './components/RightLayout/Loadable';
 import { useTranslation } from 'react-i18next';
 
 export function App() {
@@ -28,6 +33,13 @@ export function App() {
         <meta name="description" content="A React Boilerplate application" />
       </Helmet>
 
+      <LeftLayout>
+        <SideBar></SideBar>
+        <Person></Person>
+      </LeftLayout>
+      <RightLayout>
+        <Content></Content>
+      </RightLayout>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route component={NotFoundPage} />
