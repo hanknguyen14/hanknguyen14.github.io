@@ -17,13 +17,19 @@ exports[`<App /> should render and match the snapshot 1`] = `
       content="A React Boilerplate application"
       name="description"
     />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
   </Helmet>
   <Unknown>
-    <Unknown />
-    <Unknown />
-  </Unknown>
-  <Unknown>
-    <Unknown />
+    <Unknown>
+      <Unknown />
+      <Unknown />
+    </Unknown>
+    <Unknown>
+      <Unknown />
+    </Unknown>
   </Unknown>
   <Switch>
     <Route
@@ -35,6 +41,7 @@ exports[`<App /> should render and match the snapshot 1`] = `
       component={[Function]}
     />
   </Switch>
+  <Memo(GlobalStyleComponent) />
   <Memo(GlobalStyleComponent) />
 </BrowserRouter>
 `;
