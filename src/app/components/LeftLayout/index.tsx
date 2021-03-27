@@ -1,6 +1,5 @@
 import * as React from 'react';
-import styled from 'styled-components/macro';
-import { Col } from 'styled-bootstrap-grid';
+import { ColWrapper, ContentWrapper } from './Styled';
 
 type Props = {
   children: React.ReactNode;
@@ -8,12 +7,8 @@ type Props = {
 
 export function LeftLayout({ children }: Props) {
   return (
-    <Wrapper sm={6} noGutter>
-      {children}
-    </Wrapper>
+    <ColWrapper sm={6} noGutter>
+      <ContentWrapper>{children}</ContentWrapper>
+    </ColWrapper>
   );
 }
-
-const Wrapper = styled(Col)`
-  border: 1px solid orange;
-`;

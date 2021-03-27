@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "1.4.0",
+    "@styled-icons/boxicons-regular": "10.23.0",
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "11.0.2",
     "@types/fontfaceobserver": "0.0.6",
@@ -53,7 +54,7 @@
     "serve": "11.3.2",
     "shelljs": "0.8.4",
     "styled-bootstrap-grid": "3.1.0",
-    "styled-components": "5.1.0",
+    "styled-components": "5.2.1",
     "stylelint": "13.7.0",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
