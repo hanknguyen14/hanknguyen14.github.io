@@ -22,26 +22,47 @@ exports[`<App /> should render and match the snapshot 1`] = `
       name="viewport"
     />
   </Helmet>
-  <Unknown>
+  <Unknown
+    theme={
+      Object {
+        "bodyBackground": "#0a0000",
+        "colors": Object {
+          "black": "#000000",
+          "dark": "#222222",
+          "grey": "#888888",
+          "lightBlack": "#0a0000",
+          "lightGrey": "#bfbfbf",
+          "primary": "#00c483",
+          "semiDark": "#333333",
+          "semiGrey": "#555555",
+          "softGrey": "#eeeeee",
+          "white": "#ffffff",
+        },
+        "headingColor": "#222222",
+        "textColor": "#888888",
+      }
+    }
+  >
     <Unknown>
-      <Unknown />
-      <Unknown />
+      <Unknown>
+        <Unknown />
+        <Unknown />
+      </Unknown>
+      <Unknown>
+        <Switch>
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/"
+          />
+          <Route
+            component={[Function]}
+          />
+        </Switch>
+      </Unknown>
     </Unknown>
-    <Unknown>
-      <Unknown />
-    </Unknown>
+    <Memo(l) />
+    <Memo(l) />
   </Unknown>
-  <Switch>
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/"
-    />
-    <Route
-      component={[Function]}
-    />
-  </Switch>
-  <Memo(GlobalStyleComponent) />
-  <Memo(GlobalStyleComponent) />
 </BrowserRouter>
 `;

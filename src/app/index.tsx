@@ -12,12 +12,13 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import { GlobalStyle } from 'styles/global-styles';
 import { BaseCSS as GridStyle } from 'styled-bootstrap-grid';
+import { ThemeProvider } from 'styled-components';
+import { lightTheme } from 'styles/theme';
 
 import { HomePage } from './pages/HomePage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { SideBar } from './components/SideBar/Loadable';
 import { Person } from './components/Person/Loadable';
-import { Content } from './components/Content/Loadable';
 import { LeftLayout } from './components/LeftLayout/Loadable';
 import { RightLayout } from './components/RightLayout/Loadable';
 import { MainWrapper } from './components/MainWrapper/Loadable';
@@ -39,21 +40,22 @@ export function App() {
         ></meta>
       </Helmet>
 
-      <MainWrapper>
-        <LeftLayout>
-          <SideBar></SideBar>
-          <Person></Person>
-        </LeftLayout>
-        <RightLayout>
-          <Content></Content>
-        </RightLayout>
-      </MainWrapper>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route component={NotFoundPage} />
-      </Switch>
-      <GlobalStyle />
-      <GridStyle />
+      <ThemeProvider theme={lightTheme}>
+        <MainWrapper>
+          <LeftLayout>
+            <SideBar></SideBar>
+            <Person></Person>
+          </LeftLayout>
+          <RightLayout>
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route component={NotFoundPage} />
+            </Switch>
+          </RightLayout>
+        </MainWrapper>
+        <GlobalStyle />
+        <GridStyle />
+      </ThemeProvider>
     </BrowserRouter>
   );
 }

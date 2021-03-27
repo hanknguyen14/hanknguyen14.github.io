@@ -1,10 +1,20 @@
 import * as React from 'react';
-import styled from 'styled-components/macro';
+import { Wrapper, DownloadSection } from './Styled';
+import { MenuList } from '../MenuList/Loadable';
+import { CloudDownload } from '@styled-icons/boxicons-regular';
 
 export function SideBar() {
-  return <Wrapper>SideBar</Wrapper>;
+  return (
+    <Wrapper>
+      <MenuList />
+      <DownloadSection
+        as="a"
+        href="/CV-Nguyen-Manh-Hung.pdf"
+        target="_blank"
+        download
+      >
+        <CloudDownload size="40" />
+      </DownloadSection>
+    </Wrapper>
+  );
 }
-
-const Wrapper = styled.div`
-  background-color: red;
-`;
