@@ -1,10 +1,14 @@
 import * as React from 'react';
-import styled from 'styled-components/macro';
+import { PersonInfo } from '../PersonInfo/Loadable';
+import { Wrapper, Avatar, AvatarImage } from './Styled';
 
 export function Person() {
-  return <Wrapper>Person</Wrapper>;
+  return (
+    <Wrapper>
+      <Avatar>
+        <AvatarImage src="/avatar.jpg"></AvatarImage>
+      </Avatar>
+      <PersonInfo />
+    </Wrapper>
+  );
 }
-
-const Wrapper = styled.div`
-  background-color: green;
-`;
