@@ -6,7 +6,7 @@ import {
   UserIcon,
   PhoneIcon,
   BriefcaseIcon,
-  GlassesIcon,
+  BookIcon,
   StyledNavLink,
 } from './Styled';
 
@@ -15,25 +15,25 @@ const routes = [
     id: 1,
     title: 'Home',
     path: '/',
-    icon: () => <UserIcon size="30">Home</UserIcon>,
+    icon: () => <UserIcon size="30" />,
   },
   {
     id: 2,
     title: 'Contact',
     path: '/contact',
-    icon: () => <PhoneIcon size="30">Contact</PhoneIcon>,
+    icon: () => <PhoneIcon size="30" />,
   },
   {
     id: 3,
-    title: 'My works',
-    path: '/my-works',
-    icon: () => <BriefcaseIcon size="30">My works</BriefcaseIcon>,
+    title: 'Works',
+    path: '/works',
+    icon: () => <BriefcaseIcon size="30" />,
   },
   {
     id: 4,
-    title: 'My skills',
-    path: '/my-skills',
-    icon: () => <GlassesIcon size="30">My skills</GlassesIcon>,
+    title: 'Skills',
+    path: '/skills',
+    icon: () => <BookIcon size="30" />,
   },
 ];
 
@@ -42,6 +42,7 @@ export function MenuList() {
     <ListItem key={route.id}>
       <StyledNavLink exact to={route.path} activeClassName="selected">
         {<route.icon />}
+        {route.title}
       </StyledNavLink>
     </ListItem>
   ));

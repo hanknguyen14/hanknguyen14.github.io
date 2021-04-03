@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "1.4.0",
-    "@styled-icons/boxicons-regular": "10.23.0",
+    "@styled-icons/boxicons-solid": "10.23.0",
     "@styled-icons/simple-icons": "10.29.0",
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "11.0.2",
