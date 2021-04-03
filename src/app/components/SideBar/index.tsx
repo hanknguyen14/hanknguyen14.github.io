@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Wrapper, DownloadSection } from './Styled';
 import { MenuList } from '../MenuList/Loadable';
-import { CloudDownload } from '@styled-icons/boxicons-regular';
+import { CloudDownload } from '@styled-icons/boxicons-solid';
 
 export function SideBar() {
   return (
@@ -13,7 +13,8 @@ export function SideBar() {
         target="_blank"
         download
       >
-        <CloudDownload size="40" />
+        <CloudDownload size="50" />
+        CV
       </DownloadSection>
     </Wrapper>
   );

@@ -13,14 +13,16 @@ export const colors = {
 
 export const lightTheme = {
   colors,
-  bodyBackground: colors.lightBlack,
+  primary: colors.primary,
+  bodyBackground: colors.white,
   textColor: colors.grey,
   headingColor: colors.dark,
 };
 
 export const darkTheme = {
   colors,
+  primary: colors.primary,
   bodyBackground: colors.lightBlack,
-  text: colors.softGrey,
+  textColor: colors.softGrey,
   headingColor: colors.dark,
 };

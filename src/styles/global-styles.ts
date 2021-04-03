@@ -26,4 +26,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: inherit;
     font-size: inherit;
   }
+
+  a {
+    text-decoration: none;
+    opacity: 1;
+    outline: none;
+  }
 `;
