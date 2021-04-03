@@ -11170,6 +11170,11 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
+react-ityped@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-ityped/-/react-ityped-1.0.2.tgz#d10266ec281457e1c906327591861bc0d8aa1d1f"
+  integrity sha512-whkcGD8sHXZbNdBhGYHAiFyDgMQYQiG3tQJ2ENUPE7YlVjLEuZUEmdC3T6FEnNCjnJpK4c6bRYYGKBqd53VQ6g==
+
 react-redux@7.2.1:
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.1.tgz#8dedf784901014db2feca1ab633864dee68ad985"
