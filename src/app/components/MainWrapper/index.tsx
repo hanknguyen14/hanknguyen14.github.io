@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
-import { Container, Row } from 'styled-bootstrap-grid';
+import { StyledContainer, StyledRow } from './Styled';
 
 type Props = {
   children: React.ReactNode;
@@ -10,9 +10,9 @@ export function MainWrapper({ children }: Props) {
   return (
     <SiteContent>
       <SiteContentInner>
-        <Container>
-          <Row>{children}</Row>
-        </Container>
+        <StyledContainer>
+          <StyledRow>{children}</StyledRow>
+        </StyledContainer>
       </SiteContentInner>
     </SiteContent>
   );

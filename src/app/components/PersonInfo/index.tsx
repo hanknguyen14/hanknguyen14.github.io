@@ -2,13 +2,14 @@ import * as React from 'react';
 import {
   Wrapper,
   Name,
-  Position,
+  StyledITyped,
   Social,
   SocialList,
   SocialItem,
   SocialLink,
   WebsiteIcon,
   LinkedinIcon,
+  GithubIcon,
   CodepenIcon,
   GmailIcon,
 } from './Styled';
@@ -18,27 +19,52 @@ const socials = [
     id: 1,
     title: 'Website',
     href: '/',
-    icon: () => <WebsiteIcon size="20">Website</WebsiteIcon>,
+    icon: () => <WebsiteIcon size="20" />,
   },
   {
     id: 2,
     title: 'Linkedin',
     href: 'https://www.linkedin.com/in/hung-nguyen-manh-developer/',
-    icon: () => <LinkedinIcon size="20">Linkedin</LinkedinIcon>,
+    icon: () => <LinkedinIcon size="20" />,
   },
   {
     id: 3,
-    title: 'CodePen',
-    href: 'https://codepen.io/hanknguyen14',
-    icon: () => <CodepenIcon size="20">Codepen</CodepenIcon>,
+    title: 'Github',
+    href: 'https://github.com/hanknguyen14',
+    icon: () => <GithubIcon size="20" />,
   },
   {
     id: 4,
+    title: 'CodePen',
+    href: 'https://codepen.io/hanknguyen14',
+    icon: () => <CodepenIcon size="20" />,
+  },
+  {
+    id: 5,
     title: 'Gmail',
     href: 'mailto:hungnguyen.dhg@gmail.com',
-    icon: () => <GmailIcon size="20">Email</GmailIcon>,
+    icon: () => <GmailIcon size="20" />,
   },
 ];
+
+const positions = [
+  'Software Engineer',
+  'Full Stack Developer',
+  'Node Developer',
+  'React Developer',
+  'Web Developer',
+];
+
+const Position = () => {
+  return (
+    <StyledITyped
+      showCursor={false}
+      strings={positions}
+      typeSpeed={50}
+      backDelay={1500}
+    />
+  );
+};
 
 export function PersonInfo() {
   const renderListItems = socials.map(social => (
@@ -52,9 +78,7 @@ export function PersonInfo() {
   return (
     <Wrapper>
       <Name>Manh Hung Nguyen</Name>
-      <Position>
-        <span>Developer</span>
-      </Position>
+      <Position />
       <Social>
         <SocialList>{renderListItems}</SocialList>
       </Social>

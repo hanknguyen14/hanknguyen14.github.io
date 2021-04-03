@@ -1,5 +1,12 @@
 import styled, { css } from 'styled-components';
-import { Firefox, Linkedin, Codepen, Gmail } from '@styled-icons/simple-icons';
+import {
+  Firefox,
+  Linkedin,
+  Github,
+  Codepen,
+  Gmail,
+} from '@styled-icons/simple-icons';
+import ITyped from 'react-ityped';
 
 export const Wrapper = styled.div`
   position: absolute;
@@ -9,20 +16,22 @@ export const Wrapper = styled.div`
 `;
 
 export const Name = styled.h2`
-  font-weight: 900;
-  line-height: 1.17;
-  color: ${({ theme }) => theme.colors.white};
+  line-height: 32px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.headingColor};
   text-align: center;
-  font-size: 54px;
+  font-size: 34px;
 `;
 
-export const Position = styled.div`
+export const StyledITyped = styled(ITyped)`
   font-size: 18px;
-  font-weight: bold;
-  color: ${({ theme }) => theme.colors.primary};
+  font-weight: 400;
+  color: ${({ theme }) => theme.primary};
   text-align: center;
   margin-top: 10px;
   line-height: normal;
+  margin: 0;
+  display: inline-block;
 `;
 
 export const Social = styled.div``;
@@ -54,13 +63,21 @@ export const SocialLink = styled.button`
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.textColor};
 `;
 
 const SocialIcon = css`
-  color: ${({ theme }) => theme.colors.lightGrey};
+  color: ${({ theme }) => theme.textColor};
   -o-transition: 0.2s all;
+  -moz-transition: 0.2s all;
   transition: 0.2s all;
+
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+  }
 `;
 
 export const WebsiteIcon = styled(Firefox)`
@@ -68,6 +85,10 @@ export const WebsiteIcon = styled(Firefox)`
 `;
 
 export const LinkedinIcon = styled(Linkedin)`
+  ${SocialIcon}
+`;
+
+export const GithubIcon = styled(Github)`
   ${SocialIcon}
 `;
 
