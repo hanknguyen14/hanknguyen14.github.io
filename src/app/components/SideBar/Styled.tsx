@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -16,26 +16,6 @@ export const Wrapper = styled.div`
   z-index: 100;
   text-align: center;
   border-radius: 4px;
-`;
-
-export const StyledLink = css`
-  padding: 13px 3px;
-  position: relative;
-  overflow: hidden;
-  display: block;
-  height: auto;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: ${({ theme }) => theme.textColor};
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-`;
-
-export const DownloadSection = styled.button`
-  ${StyledLink}
-  margin-bottom: 5px;
-  color: ${({ theme }) => theme.primary};
+  margin-right: 10px;
+  height: max-content;
 `;

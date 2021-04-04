@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 import { User, Phone, Briefcase, Book } from '@styled-icons/boxicons-solid';
 import { NavLink } from 'react-router-dom';
-import { StyledLink } from '../SideBar/Styled';
 
 export const Wrapper = styled.div``;
 
@@ -32,6 +31,22 @@ export const BriefcaseIcon = styled(Briefcase)`
 
 export const BookIcon = styled(Book)`
   ${SideBarIcon}
+`;
+
+export const StyledLink = css`
+  padding: 13px 3px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  height: auto;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.textColor};
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
 `;
 
 export const StyledNavLink = styled(NavLink)`
@@ -107,4 +122,9 @@ export const ListItem = styled.li`
       transition: 0.2s all;
     }
   }
+`;
+
+export const DownloadSection = styled.button`
+  ${StyledLink}
+  color: ${({ theme }) => theme.primary};
 `;
