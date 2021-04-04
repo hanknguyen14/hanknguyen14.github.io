@@ -8,7 +8,9 @@ import {
   BriefcaseIcon,
   BookIcon,
   StyledNavLink,
+  DownloadSection,
 } from './Styled';
+import { CloudDownload } from '@styled-icons/boxicons-solid';
 
 const routes = [
   {
@@ -50,6 +52,15 @@ export function MenuList() {
   return (
     <Wrapper>
       <UnorderedList>{renderListItems}</UnorderedList>
+      <DownloadSection
+        as="a"
+        href="/CV-Nguyen-Manh-Hung.pdf"
+        target="_blank"
+        download
+      >
+        <CloudDownload size="45" />
+        Resume
+      </DownloadSection>
     </Wrapper>
   );
 }
