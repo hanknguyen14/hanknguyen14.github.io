@@ -1,6 +1,5 @@
 import * as React from 'react';
-import styled from 'styled-components/macro';
-import { Col } from 'styled-bootstrap-grid';
+import { ColWrapper, ContentWrapper, CardInner, CardWrapper } from './Styled';
 
 type Props = {
   children: React.ReactNode;
@@ -8,12 +7,12 @@ type Props = {
 
 export function RightLayout({ children }: Props) {
   return (
-    <Wrapper sm={6} noGutter>
-      {children}
-    </Wrapper>
+    <ColWrapper sm={6} noGutter>
+      <ContentWrapper>
+        <CardInner>
+          <CardWrapper>{children}</CardWrapper>
+        </CardInner>
+      </ContentWrapper>
+    </ColWrapper>
   );
 }
-
-const Wrapper = styled(Col)`
-  border: 1px solid black;
-`;
