@@ -1,10 +1,19 @@
 import * as React from 'react';
-import styled from 'styled-components/macro';
+import { Wrapper } from './Styled';
+import { Container, Row, Col } from 'styled-bootstrap-grid';
 
-export function Content() {
-  return <Wrapper>Content</Wrapper>;
+type Props = {
+  children: React.ReactNode;
+};
+
+export function Content({ children }: Props) {
+  return (
+    <Wrapper>
+      <Container>
+        <Row>
+          <Col sm={12}>{children}</Col>
+        </Row>
+      </Container>
+    </Wrapper>
+  );
 }
-
-const Wrapper = styled.div`
-  background-color: blue;
-`;

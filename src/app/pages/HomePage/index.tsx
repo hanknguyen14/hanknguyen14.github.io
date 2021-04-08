@@ -1,14 +1,14 @@
 import * as React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Wrapper } from './Styled';
+import { Content } from '../../components/Content/Loadable';
+import { About } from '../../components/About/Loadable';
 
 export function HomePage() {
   return (
-    <>
-      <Helmet>
-        <title>Home Page</title>
-        <meta name="description" content="A Boilerplate application homepage" />
-      </Helmet>
-      <span>HomePage container</span>
-    </>
+    <Wrapper>
+      <Content>
+        <About />
+      </Content>
+    </Wrapper>
   );
 }
