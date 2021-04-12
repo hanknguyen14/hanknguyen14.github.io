@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { User, Phone, Briefcase, Book } from '@styled-icons/boxicons-solid';
+import { User, Phone, Briefcase, Book } from '@styled-icons/boxicons-regular';
 import { NavLink } from 'react-router-dom';
 
 export const Wrapper = styled.div``;
