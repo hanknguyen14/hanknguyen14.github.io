@@ -10,7 +10,7 @@ import {
   InfoCol,
 } from './Styled';
 import { SectionTitle } from '../SectionTitle/Loadable';
-import { Row } from 'styled-bootstrap-grid';
+import { StyledRow } from '../Content/Styled';
 
 const greeting = 'Hello! I’m Hung Nguyen.';
 const introduction = `Full stack developer from Vietnam. I have rich experience in
@@ -36,7 +36,7 @@ export function About() {
   return (
     <Wrapper>
       <SectionTitle>About Me</SectionTitle>
-      <Row>
+      <StyledRow>
         <IntroCol sm={12} md={12} lg={6}>
           <TextBox>
             <strong>{greeting}</strong>
@@ -48,7 +48,7 @@ export function About() {
             <UnorderedList>{renderListItems}</UnorderedList>
           </InfoList>
         </InfoCol>
-      </Row>
+      </StyledRow>
     </Wrapper>
   );
 }

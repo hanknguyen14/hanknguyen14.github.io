@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Col } from 'styled-bootstrap-grid';
+import { Col, Row } from 'styled-bootstrap-grid';
 
 export const Wrapper = styled.div`
   position: relative;
@@ -13,6 +13,11 @@ export const Section = styled.div`
   &:last-child {
     margin-bottom: 30px;
   }
+`;
+
+export const StyledRow = styled(Row)`
+  margin: 0 -15px;
+  position: relative;
 `;
 
 export const StyledCol = styled(Col)`
@@ -44,6 +49,34 @@ export const BorderVerticalLine = css`
     );
     background: radial-gradient(
       ellipse at top,
+      ${({ theme }) => theme.textColor} 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+  }
+`;
+
+export const BorderHorizontalLine = css`
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(
+      center,
+      ellipse cover,
+      ${({ theme }) => theme.textColor} 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: -webkit-radial-gradient(
+      center,
+      ellipse cover,
+      ${({ theme }) => theme.textColor} 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: radial-gradient(
+      ellipse at center,
       ${({ theme }) => theme.textColor} 0%,
       rgba(255, 255, 255, 0) 70%
     );

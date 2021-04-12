@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 import { Col } from 'styled-bootstrap-grid';
 
-export const ColWrapper = styled(Col)`
-  border: 1px solid black;
-`;
+export const ColWrapper = styled(Col)``;
 
 export const ContentWrapper = styled.div`
   display: flex;
@@ -12,8 +10,13 @@ export const ContentWrapper = styled.div`
 
 export const CardInner = styled.div`
   padding: 0;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  top: 15px;
+  bottom: 15px;
+  width: auto;
+  height: auto;
   background: ${({ theme }) => theme.bodyBackground};
   transform-origin: center left;
   z-index: 8;
@@ -23,6 +26,7 @@ export const CardInner = styled.div`
   transition: visibility 1s linear, opacity 0s linear;
   -moz-transition: visibility 1s linear, opacity 0s linear;
   -o-transition: visibility 1s linear, opacity 0s linear;
+  border: 1px solid black;
 
   &:before,
   &:after {

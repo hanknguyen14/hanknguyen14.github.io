@@ -10,7 +10,7 @@ import {
   StyledNavLink,
   DownloadSection,
 } from './Styled';
-import { CloudDownload } from '@styled-icons/boxicons-solid';
+import { CloudDownload } from '@styled-icons/boxicons-regular';
 
 const routes = [
   {
