@@ -27,11 +27,40 @@ export const StyledCol = styled(Col)`
   font-size: 16px;
 `;
 
-export const BorderVerticalLine = css`
+export const BorderVerticalLineBefore = css`
   &:before {
     content: '';
     position: absolute;
     left: -1px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: -moz-radial-gradient(
+      top,
+      ellipse cover,
+      ${({ theme }) => theme.textColor} 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: -webkit-radial-gradient(
+      top,
+      ellipse cover,
+      ${({ theme }) => theme.textColor} 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: radial-gradient(
+      ellipse at top,
+      ${({ theme }) => theme.textColor} 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+  }
+`;
+
+export const BorderVerticalLineAfter = css`
+  &:after {
+    margin: 0 0 0 -1px;
+    content: '';
+    position: absolute;
+    left: 50%;
     top: 0;
     width: 1px;
     height: 100%;
