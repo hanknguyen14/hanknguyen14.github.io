@@ -29,7 +29,7 @@ const items = [
     icon: () => <Cog size="30" />,
     name: 'Backend Development',
     description:
-      'Building a product that works seamlessly, meet market needs and creating an enjoyable user experience that earns your clients loyalty.',
+      'Building a product that works seamlessly, meet market needs and creating an enjoyable user experience.',
   },
   {
     id: 3,

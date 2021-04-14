@@ -1,12 +1,16 @@
 import styled from 'styled-components';
-import { Section, BorderVerticalLine, StyledCol } from '../Content/Styled';
+import {
+  Section,
+  BorderVerticalLineBefore,
+  StyledCol,
+} from '../Content/Styled';
 
 export const Wrapper = styled(Section)``;
 
 export const IntroCol = styled(StyledCol)``;
 
 export const InfoCol = styled(StyledCol)`
-  ${BorderVerticalLine}
+  ${BorderVerticalLineBefore}
 `;
 
 export const TextBox = styled.div``;
