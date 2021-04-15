@@ -49,8 +49,8 @@ const items = [
 
 export function Services() {
   const renderBorderItems = items.map(item => (
-    <BorderCol sm={12} md={12} lg={6}>
-      <ServiceItem key={item.id}>
+    <BorderCol sm={12} md={12} lg={6} key={item.id}>
+      <ServiceItem>
         <ServiceIcon>{<item.icon />}</ServiceIcon>
         <ServiceName>{item.name}</ServiceName>
         <ServiceDescription>{item.description}</ServiceDescription>

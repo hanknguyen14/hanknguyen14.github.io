@@ -40,8 +40,8 @@ const items = [
 
 export function FunFacts() {
   const renderBorderItems = items.map(item => (
-    <BorderCol sm={6} md={6} lg={6}>
-      <FunFactItem key={item.id}>
+    <BorderCol sm={6} md={6} lg={6} key={item.id}>
+      <FunFactItem>
         <FunFactIcon>{<item.icon />}</FunFactIcon>
         <FunFactName>{item.name}</FunFactName>
       </FunFactItem>
