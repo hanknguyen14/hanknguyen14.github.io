@@ -38,18 +38,18 @@ export const BorderVerticalLineBefore = css`
     background: -moz-radial-gradient(
       top,
       ellipse cover,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
     background: -webkit-radial-gradient(
       top,
       ellipse cover,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
     background: radial-gradient(
       ellipse at top,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
   }
@@ -67,18 +67,18 @@ export const BorderVerticalLineAfter = css`
     background: -moz-radial-gradient(
       top,
       ellipse cover,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
     background: -webkit-radial-gradient(
       top,
       ellipse cover,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
     background: radial-gradient(
       ellipse at top,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
   }
@@ -95,18 +95,18 @@ export const BorderHorizontalLine = css`
     background: -moz-radial-gradient(
       center,
       ellipse cover,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
     background: -webkit-radial-gradient(
       center,
       ellipse cover,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
     background: radial-gradient(
       ellipse at center,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
   }

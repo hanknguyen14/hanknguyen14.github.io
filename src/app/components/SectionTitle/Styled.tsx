@@ -49,18 +49,18 @@ export const Wrapper = styled.div`
     background: -moz-radial-gradient(
       left,
       ellipse cover,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
     background: -webkit-radial-gradient(
       left,
       ellipse cover,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
     background: radial-gradient(
       ellipse at left,
-      ${({ theme }) => theme.textColor} 0%,
+      ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
   }
