@@ -16,6 +16,7 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme } from 'styles/theme';
 
 import { HomePage } from './pages/HomePage/Loadable';
+import { SkillsPage } from './pages/SkillsPage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { SideBar } from './components/SideBar/Loadable';
 import { Person } from './components/Person/Loadable';
@@ -49,6 +50,7 @@ export function App() {
           <RightLayout>
             <Switch>
               <Route exact path="/" component={HomePage} />
+              <Route exact path="/skills" component={SkillsPage} />
               <Route component={NotFoundPage} />
             </Switch>
           </RightLayout>
