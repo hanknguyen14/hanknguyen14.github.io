@@ -21,9 +21,9 @@ const routes = [
   },
   {
     id: 2,
-    title: 'Contact',
-    path: '/contact',
-    icon: () => <PhoneIcon size="30" />,
+    title: 'Skills',
+    path: '/skills',
+    icon: () => <BookIcon size="30" />,
   },
   {
     id: 3,
@@ -33,9 +33,9 @@ const routes = [
   },
   {
     id: 4,
-    title: 'Skills',
-    path: '/skills',
-    icon: () => <BookIcon size="30" />,
+    title: 'Contact',
+    path: '/contact',
+    icon: () => <PhoneIcon size="30" />,
   },
 ];
 
