@@ -57,6 +57,7 @@
     "shelljs": "0.8.4",
     "styled-bootstrap-grid": "3.1.0",
     "styled-components": "5.2.1",
+    "styled-react-modal": "2.1.0",
     "stylelint": "13.7.0",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",

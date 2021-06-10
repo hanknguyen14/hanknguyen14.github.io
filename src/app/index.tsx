@@ -14,6 +14,7 @@ import { GlobalStyle } from 'styles/global-styles';
 import { BaseCSS as GridStyle } from 'styled-bootstrap-grid';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme } from 'styles/theme';
+import { ModalProvider } from 'styled-react-modal';
 
 import { HomePage } from './pages/HomePage/Loadable';
 import { SkillsPage } from './pages/SkillsPage/Loadable';
@@ -43,20 +44,22 @@ export function App() {
       </Helmet>
 
       <ThemeProvider theme={lightTheme}>
-        <MainWrapper>
-          <LeftLayout>
-            <SideBar></SideBar>
-            <Person></Person>
-          </LeftLayout>
-          <RightLayout>
-            <Switch>
-              <Route exact path="/" component={HomePage} />
-              <Route exact path="/skills" component={SkillsPage} />
-              <Route exact path="/works" component={WorksPage} />
-              <Route component={NotFoundPage} />
-            </Switch>
-          </RightLayout>
-        </MainWrapper>
+        <ModalProvider>
+          <MainWrapper>
+            <LeftLayout>
+              <SideBar></SideBar>
+              <Person></Person>
+            </LeftLayout>
+            <RightLayout>
+              <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/skills" component={SkillsPage} />
+                <Route exact path="/works" component={WorksPage} />
+                <Route component={NotFoundPage} />
+              </Switch>
+            </RightLayout>
+          </MainWrapper>
+        </ModalProvider>
         <GlobalStyle />
         <GridStyle />
       </ThemeProvider>

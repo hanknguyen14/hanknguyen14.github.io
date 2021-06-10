@@ -9,6 +9,11 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #888888;
+    letter-spacing: 0em;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
   }
 
   #root {
