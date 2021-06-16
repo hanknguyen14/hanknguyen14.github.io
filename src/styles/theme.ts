@@ -9,6 +9,7 @@ export const colors = {
   grey: '#888888',
   lightGrey: '#bfbfbf',
   softGrey: '#eeeeee',
+  red: '#ff1d15',
 };
 
 export const lightTheme = {

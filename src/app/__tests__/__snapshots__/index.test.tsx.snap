@@ -33,6 +33,7 @@ exports[`<App /> should render and match the snapshot 1`] = `
           "lightBlack": "#0a0000",
           "lightGrey": "#bfbfbf",
           "primary": "#00c483",
+          "red": "#ff1d15",
           "semiDark": "#333333",
           "semiGrey": "#555555",
           "softGrey": "#eeeeee",
@@ -66,6 +67,11 @@ exports[`<App /> should render and match the snapshot 1`] = `
               component={[Function]}
               exact={true}
               path="/works"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/contact"
             />
             <Route
               component={[Function]}

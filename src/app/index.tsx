@@ -19,6 +19,7 @@ import { ModalProvider } from 'styled-react-modal';
 import { HomePage } from './pages/HomePage/Loadable';
 import { SkillsPage } from './pages/SkillsPage/Loadable';
 import { WorksPage } from './pages/WorksPage/Loadable';
+import { ContactPage } from './pages/ContactPage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { SideBar } from './components/SideBar/Loadable';
 import { Person } from './components/Person/Loadable';
@@ -55,6 +56,7 @@ export function App() {
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/skills" component={SkillsPage} />
                 <Route exact path="/works" component={WorksPage} />
+                <Route exact path="/contact" component={ContactPage} />
                 <Route component={NotFoundPage} />
               </Switch>
             </RightLayout>
