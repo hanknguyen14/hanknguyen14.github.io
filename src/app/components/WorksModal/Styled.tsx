@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Modal from 'styled-react-modal';
+import { StyledButton } from '../Content/Styled';
 
 export const StyledModal = Modal.styled`
   margin: 0 0 0 -360px;
@@ -210,65 +211,5 @@ export const WorkContentImage = styled.img`
 `;
 
 export const ViewWorkButton = styled.a`
-  position: relative;
-  font-size: 14px;
-  color: ${({ theme }) => theme.textColor};
-  font-weight: 500;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: none;
-  padding: 0 30px;
-  display: inline-block;
-  float: none;
-  width: auto;
-  height: 50px;
-  line-height: 50px;
-  background: ${({ theme }) => theme.colors.softGrey};
-  border-radius: 4px;
-  cursor: pointer;
-`;
-
-export const ViewWorkButtonText = styled.span`
-  transition: all 0.3s ease 0s;
-  padding-left: 14px;
-`;
-
-export const ViewWorkButtonArrow = styled.span`
-  margin: 0 8px;
-  position: relative;
-  top: -1px;
-  left: 0;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 18px;
-  transition: all 0.3s ease 0s;
-  top: -1px;
-  width: 14px;
-  height: 2px;
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: ${({ theme }) => theme.textColor};
-    transition: all 0.3s ease 0s;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    background: ${({ theme }) => theme.textColor};
-    transition: all 0.3s ease 0s;
-    left: auto;
-    top: auto;
-    right: 0;
-    bottom: 3px;
-    width: 8px;
-    height: 2px;
-    transform: rotate(45deg);
-  }
+  ${StyledButton}
 `;

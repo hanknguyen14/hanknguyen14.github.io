@@ -19,9 +19,8 @@ import {
   WorkContentLI,
   WorkContentImage,
   ViewWorkButton,
-  ViewWorkButtonText,
-  ViewWorkButtonArrow,
 } from './Styled';
+import { StyledButtonText, StyledButtonArrow } from '../Content/Styled';
 
 export function WorksModal({ isOpen, toggleModal, work }) {
   const {
@@ -84,8 +83,8 @@ export function WorksModal({ isOpen, toggleModal, work }) {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <ViewWorkButtonText>View Project</ViewWorkButtonText>
-                  <ViewWorkButtonArrow></ViewWorkButtonArrow>
+                  <StyledButtonText>View Project</StyledButtonText>
+                  <StyledButtonArrow></StyledButtonArrow>
                 </ViewWorkButton>
               </Description>
             </Content>
