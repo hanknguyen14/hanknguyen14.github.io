@@ -28,7 +28,7 @@ export const ServiceIcon = styled.div`
   text-align: center;
   font-size: 35px;
   color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.primaryColor};
   border-radius: 60px;
   -moz-border-radius: 60px;
   -khtml-border-radius: 60px;

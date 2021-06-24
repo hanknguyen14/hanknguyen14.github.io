@@ -18,7 +18,7 @@ export const Wrapper = styled.header`
   border-radius: 4px;
   margin-right: 10px;
   height: max-content;
-  position: fixed;
+  position: absolute;
 
   ${media.medium`
     width: 72px;

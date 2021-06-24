@@ -159,7 +159,7 @@ export const StrongTag = styled.strong`
   float: left;
   margin-right: 8px;
   padding: 1px 8px;
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.primaryColor};
   font-size: 14px;
   line-height: 20px;
   color: ${({ theme }) => theme.colors.white};
@@ -209,7 +209,7 @@ export const WorkContentLI = styled.li`
     top: 11px;
     width: 4px;
     height: 4px;
-    background: ${({ theme }) => theme.primary};
+    background: ${({ theme }) => theme.primaryColor};
     border-radius: 4px;
   }
 `;

@@ -82,5 +82,5 @@ export const Strong = styled.strong`
   border-radius: 2px;
   -moz-border-radius: 2px;
   -khtml-border-radius: 2px;
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.primaryColor};
 `;

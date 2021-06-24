@@ -20,7 +20,7 @@ const ResumeIcon = css`
   position: relative;
   top: -12px;
   float: left;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primaryColor};
 `;
 
 export const ResumeItem = styled.div`
@@ -60,8 +60,8 @@ export const ResumeDate = styled.div`
   color: ${({ theme }) => theme.colors.semiGrey};
 
   &.active {
-    border-color: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.primary};
+    border-color: ${({ theme }) => theme.primaryColor};
+    color: ${({ theme }) => theme.primaryColor};
   }
 `;
 

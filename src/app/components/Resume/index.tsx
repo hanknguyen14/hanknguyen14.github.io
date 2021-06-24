@@ -33,7 +33,7 @@ const experienceItems = [
     </p>
     <p>
     - Developing high-volume, low-latency applications for
-    systems, delivering high- availability and performance API.
+    systems, delivering high-availability and performance API.
     </p>
     <p>
     - Ensuring that non-functional requirements such as security,
