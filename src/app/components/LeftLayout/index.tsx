@@ -7,7 +7,7 @@ type Props = {
 
 export function LeftLayout({ children }: Props) {
   return (
-    <ColWrapper sm={6} noGutter>
+    <ColWrapper sm={12} md={12} lg={6} noGutter>
       <ContentWrapper>{children}</ContentWrapper>
     </ColWrapper>
   );

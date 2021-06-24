@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { media } from 'styles/media';
 
 export const Wrapper = styled.div`
   position: relative;
   float: left;
-  width: 480px;
+  width: 100%;
   height: 100%;
   z-index: 11;
   border-radius: 4px;
@@ -49,6 +50,10 @@ export const Wrapper = styled.div`
     -moz-border-radius: 4px;
     -khtml-border-radius: 4px;
   }
+
+  ${media.medium`
+    width: 480px;
+  `}
 `;
 
 export const Profile = styled.div`
@@ -77,13 +82,18 @@ export const ProfileContent = styled.div`
   transition: all 0.02s ease 1s;
   -moz-transition: all 0.02s ease 1s;
   -o-transition: all 0.02s ease 1s;
+  top: 50px;
+
+  ${media.small`
+    top: unset;
+  `}
 `;
 
 export const Avatar = styled.div`
   background-image: url('/avatar.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 10px;
   position: absolute;
   left: 0;
   top: 0;
@@ -92,13 +102,13 @@ export const Avatar = styled.div`
   -moz-border-radius: 4px 4px 0 0;
   -khtml-border-radius: 4px 4px 0 0;
   z-index: 0;
-  height: 57%;
+  height: 45%;
 
   &:before,
   &:after {
     content: '';
     position: absolute;
-    left: -25%;
+    left: -23%;
     bottom: -63%;
     width: 100%;
     height: 70%;
@@ -111,10 +121,28 @@ export const Avatar = styled.div`
 
   &:after {
     left: auto;
-    right: -25%;
+    right: -20%;
     transform: rotate(-8deg);
     -moz-transform: rotate(-8deg);
     -o-transform: rotate(-8deg);
+  }
+
+  ${media.small`
+    height: 60%;
+    background-position: center 30px;
+  `}
+
+  @media (min-width: 1024px) {
+    height: 57%;
+    background-position: center;
+
+    &:before {
+      left: -25%;
+    }
+
+    &:after {
+      right: -25%;
+    }
   }
 `;
 

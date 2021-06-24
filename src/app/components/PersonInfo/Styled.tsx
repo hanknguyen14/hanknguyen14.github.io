@@ -7,6 +7,7 @@ import {
   Gmail,
 } from '@styled-icons/simple-icons';
 import ITyped from 'react-ityped';
+import { media } from 'styles/media';
 
 export const Wrapper = styled.div`
   position: absolute;
@@ -20,7 +21,11 @@ export const Name = styled.h2`
   font-weight: 400;
   color: ${({ theme }) => theme.headingColor};
   text-align: center;
-  font-size: 34px;
+  font-size: 26px;
+
+  ${media.small`
+    font-size: 34px;
+  `}
 `;
 
 export const StyledITyped = styled(ITyped)`

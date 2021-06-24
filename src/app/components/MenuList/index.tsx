@@ -9,8 +9,8 @@ import {
   BookIcon,
   StyledNavLink,
   DownloadSection,
+  CloudDownloadIcon,
 } from './Styled';
-import { CloudDownload } from '@styled-icons/boxicons-regular';
 
 const routes = [
   {
@@ -51,16 +51,20 @@ export function MenuList() {
 
   return (
     <Wrapper>
-      <UnorderedList>{renderListItems}</UnorderedList>
-      <DownloadSection
-        as="a"
-        href="/CV-Nguyen-Manh-Hung.pdf"
-        target="_blank"
-        download
-      >
-        <CloudDownload size="45" />
-        Resume
-      </DownloadSection>
+      <UnorderedList>
+        {renderListItems}
+        <ListItem>
+          <DownloadSection
+            as="a"
+            href="/CV-Nguyen-Manh-Hung.pdf"
+            target="_blank"
+            download
+          >
+            <CloudDownloadIcon size="30" />
+            Resume
+          </DownloadSection>
+        </ListItem>
+      </UnorderedList>
     </Wrapper>
   );
 }

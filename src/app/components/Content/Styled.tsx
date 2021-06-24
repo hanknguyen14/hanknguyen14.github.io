@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Col, Row } from 'styled-bootstrap-grid';
+import { media } from 'styles/media';
 
 export const Wrapper = styled.div`
   position: relative;
@@ -29,7 +30,6 @@ export const StyledCol = styled(Col)`
 
 export const BorderVerticalLineBefore = css`
   &:before {
-    content: '';
     position: absolute;
     left: -1px;
     top: 0;
@@ -52,13 +52,16 @@ export const BorderVerticalLineBefore = css`
       ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
+
+    ${media.medium`
+      content: '';
+    `}
   }
 `;
 
 export const BorderVerticalLineAfter = css`
   &:after {
     margin: 0 0 0 -1px;
-    content: '';
     position: absolute;
     left: 50%;
     top: 0;
@@ -81,6 +84,10 @@ export const BorderVerticalLineAfter = css`
       ${({ theme }) => theme.colors.lightGrey} 0%,
       rgba(255, 255, 255, 0) 70%
     );
+
+    ${media.medium`
+      content: '';
+    `}
   }
 `;
 

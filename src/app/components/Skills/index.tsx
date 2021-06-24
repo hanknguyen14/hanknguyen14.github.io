@@ -205,7 +205,7 @@ export function Skills() {
     <Wrapper>
       <SectionTitle>Skills</SectionTitle>
       <StyledRow>
-        <SkillCol sm={6} md={6} lg={6}>
+        <SkillCol sm={12} md={6} lg={6}>
           <SkillTitle>
             <PersonalSkillsIcon size="35" />
             <SkillName>
@@ -214,7 +214,7 @@ export function Skills() {
           </SkillTitle>
           <SkillUl>{LineProgressItems(personalSkillsItems)}</SkillUl>
         </SkillCol>
-        <BorderVerticalCol sm={6} md={6} lg={6}>
+        <BorderVerticalCol sm={12} md={6} lg={6}>
           <SkillTitle>
             <CodingIcon size="35" />
             <SkillName>

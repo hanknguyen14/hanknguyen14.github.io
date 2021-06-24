@@ -37,7 +37,7 @@ const items = [
 
 export function Clients() {
   const renderBorderItems = items.map(item => (
-    <BorderCol sm={3} md={3} lg={3} key={item.id}>
+    <BorderCol sm={12} md={6} lg={3} key={item.id}>
       <ClientItem>
         <a href={item.href}>
           <ClientImage src={item.src} alt={item.alt} />
