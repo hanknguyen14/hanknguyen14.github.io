@@ -5,7 +5,9 @@ import {
   BorderVerticalLineAfter,
   BorderVerticalLineBefore,
   StyledRow,
+  BorderHorizontalLine,
 } from '../Content/Styled';
+import { media } from 'styles/media';
 
 export const Wrapper = styled(Section)``;
 
@@ -26,15 +28,21 @@ export const ClientItem = styled.div`
   padding: 0;
   font-size: 0;
   text-align: center;
+  ${BorderHorizontalLine}
+
+  ${media.medium`
+    &:after {
+      content: none;
+    }
+  `}
 `;
 
 export const ClientImage = styled.img`
   height: auto;
-  max-width: 100%;
+  max-width: 100px;
   border: none;
   border-radius: 0;
   box-shadow: none;
-  max-width: 100%;
   opacity: 0.4;
 
   &:hover {

@@ -1,20 +1,28 @@
 import styled from 'styled-components';
 import Modal from 'styled-react-modal';
 import { StyledButton } from '../Content/Styled';
+import { media } from 'styles/media';
 
 export const StyledModal = Modal.styled`
-  margin: 0 0 0 -360px;
   padding: 0;
   top: 0;
-  left: 50%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  width: 720px;
   height: 100%;
   background-color: ${({ theme }) => theme.colors.white};
   z-index: 1043;
   position: fixed;
   outline: none !important;
+  left: 0;
+  width: 100%;
+  margin: 0;
+
+  ${media.small`
+    left: 50%;
+    width: 720px;
+    margin: 0 0 0 -360px;
+    overflow: hidden auto;
+  `}
 `;
 
 export const Container = styled.div`
@@ -179,6 +187,7 @@ export const WorkContent = styled.div`
 
 export const WorkContentUL = styled.ul`
   list-style: none;
+  padding: 0;
 `;
 
 export const WorkContentLI = styled.li`

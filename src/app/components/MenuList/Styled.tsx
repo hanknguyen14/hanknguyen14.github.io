@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components';
 import { User, Phone, Briefcase, Book } from '@styled-icons/boxicons-regular';
 import { NavLink } from 'react-router-dom';
+import { media } from 'styles/media';
+import { CloudDownload } from '@styled-icons/boxicons-regular';
 
 export const Wrapper = styled.div``;
 
@@ -8,13 +10,21 @@ export const UnorderedList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  ${media.medium`
+    display: initial;
+  `}
 `;
 
 const SideBarIcon = css`
   color: ${({ theme }) => theme.textColor};
-  -webkit-transition: 0.2s all;
   -o-transition: 0.2s all;
   transition: 0.2s all;
+  display: block;
+  margin: 0 auto;
 `;
 
 export const UserIcon = styled(User)`
@@ -31,6 +41,11 @@ export const BriefcaseIcon = styled(Briefcase)`
 
 export const BookIcon = styled(Book)`
   ${SideBarIcon}
+`;
+
+export const CloudDownloadIcon = styled(CloudDownload)`
+  ${SideBarIcon}
+  color: ${({ theme }) => theme.primary};
 `;
 
 export const StyledLink = css`
@@ -64,7 +79,6 @@ export const StyledNavLink = styled(NavLink)`
   }
 
   &:before {
-    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -88,18 +102,24 @@ export const StyledNavLink = styled(NavLink)`
       rgba(255, 255, 255, 0) 70%
     );
   }
+
+  ${media.medium`
+    &:before {
+      content: '';
+    }
+  `}
 `;
 
 export const ListItem = styled.li`
   transition: color 0.3s ease 0s;
   -moz-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
+  margin: 0 10px;
 
   &:first-child {
     ${StyledNavLink} {
       border-radius: 4px 4px 0 0;
       -moz-border-radius: 4px 4px 0 0;
-      -webkit-border-radius: 4px 4px 0 0;
       -khtml-border-radius: 4px 4px 0 0;
     }
   }
@@ -107,7 +127,6 @@ export const ListItem = styled.li`
   &:hover {
     ${StyledNavLink} {
       color: ${({ theme }) => theme.primary};
-      -webkit-transition: 0.2s all;
       -o-transition: 0.2s all;
       transition: 0.2s all;
     }
@@ -117,11 +136,15 @@ export const ListItem = styled.li`
     ${BriefcaseIcon},
     ${BookIcon} {
       color: ${({ theme }) => theme.primary};
-      -webkit-transition: 0.2s all;
       -o-transition: 0.2s all;
       transition: 0.2s all;
     }
   }
+
+  ${media.medium`
+    display: initial;
+    margin: 0;
+  `}
 `;
 
 export const DownloadSection = styled.button`

@@ -25,7 +25,7 @@ export const BoxItemImageLink = styled.a`
 export const BoxItemImage = styled.img`
   position: relative;
   width: 100%;
-  height: auto;
+  height: 150px;
   transition: all 0.6s ease 0s;
   -moz-transition: all 0.6s ease 0s;
   -o-transition: all 0.6s ease 0s;
