@@ -45,7 +45,7 @@ export const BookIcon = styled(Book)`
 
 export const CloudDownloadIcon = styled(CloudDownload)`
   ${SideBarIcon}
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primaryColor};
 `;
 
 export const StyledLink = css`
@@ -68,13 +68,13 @@ export const StyledNavLink = styled(NavLink)`
   ${StyledLink}
 
   &.selected {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.primaryColor};
 
     ${UserIcon},
     ${PhoneIcon},
     ${BriefcaseIcon},
     ${BookIcon} {
-      color: ${({ theme }) => theme.primary};
+      color: ${({ theme }) => theme.primaryColor};
     }
   }
 
@@ -126,7 +126,7 @@ export const ListItem = styled.li`
 
   &:hover {
     ${StyledNavLink} {
-      color: ${({ theme }) => theme.primary};
+      color: ${({ theme }) => theme.primaryColor};
       -o-transition: 0.2s all;
       transition: 0.2s all;
     }
@@ -135,7 +135,7 @@ export const ListItem = styled.li`
     ${PhoneIcon},
     ${BriefcaseIcon},
     ${BookIcon} {
-      color: ${({ theme }) => theme.primary};
+      color: ${({ theme }) => theme.primaryColor};
       -o-transition: 0.2s all;
       transition: 0.2s all;
     }
@@ -149,5 +149,5 @@ export const ListItem = styled.li`
 
 export const DownloadSection = styled.button`
   ${StyledLink}
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primaryColor};
 `;

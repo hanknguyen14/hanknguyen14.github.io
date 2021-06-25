@@ -67,5 +67,5 @@ export const Wrapper = styled.div`
 `;
 
 export const FirstWord = styled.span`
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primaryColor};
 `;

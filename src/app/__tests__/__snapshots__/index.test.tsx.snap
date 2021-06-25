@@ -40,7 +40,7 @@ exports[`<App /> should render and match the snapshot 1`] = `
           "white": "#ffffff",
         },
         "headingColor": "#222222",
-        "primary": "#00c483",
+        "primaryColor": "#00c483",
         "textColor": "#888888",
       }
     }
@@ -52,36 +52,15 @@ exports[`<App /> should render and match the snapshot 1`] = `
           <Unknown />
         </Unknown>
         <Unknown>
-          <Switch>
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/"
-            />
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/skills"
-            />
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/works"
-            />
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/contact"
-            />
-            <Route
-              component={[Function]}
-            />
-          </Switch>
+          <Route
+            render={[Function]}
+          />
         </Unknown>
       </Unknown>
     </b>
     <Memo(l) />
     <Memo(l) />
+    <Unknown />
   </Unknown>
 </BrowserRouter>
 `;

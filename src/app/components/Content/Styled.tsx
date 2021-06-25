@@ -183,12 +183,12 @@ export const StyledButton = css`
   cursor: pointer;
 
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.primaryColor};
 
     ${StyledButtonArrow} {
       &:before,
       &:after {
-        background-color: ${({ theme }) => theme.primary};
+        background-color: ${({ theme }) => theme.primaryColor};
       }
     }
   }

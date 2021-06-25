@@ -14,7 +14,7 @@ export const colors = {
 
 export const lightTheme = {
   colors,
-  primary: colors.primary,
+  primaryColor: colors.primary,
   bodyBackground: colors.white,
   textColor: colors.grey,
   headingColor: colors.dark,
@@ -22,7 +22,7 @@ export const lightTheme = {
 
 export const darkTheme = {
   colors,
-  primary: colors.primary,
+  primaryColor: colors.primary,
   bodyBackground: colors.lightBlack,
   textColor: colors.softGrey,
   headingColor: colors.dark,

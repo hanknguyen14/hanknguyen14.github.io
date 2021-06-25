@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Section, StyledCol } from '../Content/Styled';
+import { media } from 'styles/media';
 
 export const Wrapper = styled(Section)``;
 
@@ -19,7 +20,7 @@ export const UnorderedList = styled.ul`
 export const ListItem = styled.li`
   padding: 11px 15px;
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
   word-break: break-word;
   text-align: right;
   display: inline-block;
@@ -51,6 +52,10 @@ export const ListItem = styled.li`
       rgba(255, 255, 255, 0) 70%
     );
   }
+
+  ${media.small`
+    font-size: 16px;
+  `}
 `;
 
 export const Strong = styled.strong`
@@ -62,5 +67,5 @@ export const Strong = styled.strong`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 400;
   border-radius: 2px;
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.primaryColor};
 `;

@@ -31,10 +31,9 @@ export const Name = styled.h2`
 export const StyledITyped = styled(ITyped)`
   font-size: 18px;
   font-weight: 400;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primaryColor};
   text-align: center;
-  margin-top: 10px;
-  line-height: normal;
+  line-height: 20px;
   margin: 0;
   display: inline-block;
 `;
@@ -78,7 +77,7 @@ const SocialIcon = css`
   transition: 0.2s all;
 
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.primaryColor};
     transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;

@@ -15,6 +15,7 @@ const StyledField = css`
   padding: 0 15px;
   display: block;
   font-size: 16px;
+  font-family: 'Poppins';
   width: 100%;
   height: 50px;
   color: ${({ theme }) => theme.colors.dark};
@@ -31,8 +32,8 @@ const StyledField = css`
   }
 
   &:focus {
-    color: ${({ theme }) => theme.primary};
-    border: 2px solid ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.primaryColor};
+    border: 2px solid ${({ theme }) => theme.primaryColor};
   }
 `;
 
@@ -54,5 +55,6 @@ export const Message = styled.p<MessageType>`
   margin: 2em 0.5em 1em;
   padding: 0.2em 1em;
   border: 2px solid
-    ${({ theme, isSuccess }) => (isSuccess ? theme.primary : theme.colors.red)};
+    ${({ theme, isSuccess }) =>
+      isSuccess ? theme.primaryColor : theme.colors.red};
 `;

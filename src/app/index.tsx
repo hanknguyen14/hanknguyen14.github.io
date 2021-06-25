@@ -15,6 +15,7 @@ import { BaseCSS as GridStyle } from 'styled-bootstrap-grid';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme } from 'styles/theme';
 import { ModalProvider } from 'styled-react-modal';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import { HomePage } from './pages/HomePage/Loadable';
 import { SkillsPage } from './pages/SkillsPage/Loadable';
@@ -26,6 +27,7 @@ import { Person } from './components/Person/Loadable';
 import { LeftLayout } from './components/LeftLayout/Loadable';
 import { RightLayout } from './components/RightLayout/Loadable';
 import { MainWrapper } from './components/MainWrapper/Loadable';
+import { BubbleAnimation } from './components/BubbleAnimation/Loadable';
 import { useTranslation } from 'react-i18next';
 
 export function App() {
@@ -52,18 +54,31 @@ export function App() {
               <Person></Person>
             </LeftLayout>
             <RightLayout>
-              <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route exact path="/skills" component={SkillsPage} />
-                <Route exact path="/works" component={WorksPage} />
-                <Route exact path="/contact" component={ContactPage} />
-                <Route component={NotFoundPage} />
-              </Switch>
+              <Route
+                render={({ location }) => (
+                  <TransitionGroup>
+                    <CSSTransition
+                      key={location.pathname}
+                      classNames="fade"
+                      timeout={1000}
+                    >
+                      <Switch location={location}>
+                        <Route exact path="/" component={HomePage} />
+                        <Route exact path="/skills" component={SkillsPage} />
+                        <Route exact path="/works" component={WorksPage} />
+                        <Route exact path="/contact" component={ContactPage} />
+                        <Route component={NotFoundPage} />
+                      </Switch>
+                    </CSSTransition>
+                  </TransitionGroup>
+                )}
+              />
             </RightLayout>
           </MainWrapper>
         </ModalProvider>
         <GlobalStyle />
         <GridStyle />
+        <BubbleAnimation />
       </ThemeProvider>
     </BrowserRouter>
   );

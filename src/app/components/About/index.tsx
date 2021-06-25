@@ -19,7 +19,7 @@ const items = [
   { id: 1, title: 'Age', value: '2x' },
   { id: 2, title: 'Residence', value: 'Vietnam' },
   { id: 3, title: 'Freelance', value: 'Available' },
-  { id: 4, title: 'Address', value: 'Danang, Vietnam' },
+  { id: 4, title: 'Address', value: 'Danang, VN' },
 ];
 
 export function About() {

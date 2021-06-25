@@ -111,7 +111,7 @@ export const BoxItem = styled.div`
       opacity: 1;
     }
     ${DescriptionLink} {
-      color: ${({ theme }) => theme.primary};
+      color: ${({ theme }) => theme.primaryColor};
     }
   }
 `;

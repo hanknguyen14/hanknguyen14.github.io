@@ -37,7 +37,7 @@ const SkillIcon = css`
   position: relative;
   top: -12px;
   float: left;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primaryColor};
 `;
 
 export const SkillName = styled.div`
@@ -90,7 +90,7 @@ export const SkillProgressPercent = styled.div`
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   width: ${(props: ProgressPercentType) => props.percent};
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.primaryColor};
 `;
 
 export const SkillProgressDottedPercent = styled(SkillProgressPercent)`
@@ -131,7 +131,7 @@ export const DottedActive = styled(DottedBackground)`
 `;
 
 export const DottedActiveChild = styled(DottedBackgroundChild)`
-  background: ${({ theme }) => theme.primary};
+  background: ${({ theme }) => theme.primaryColor};
 `;
 
 export const SkillListUl = styled(SkillUl)`
@@ -152,7 +152,7 @@ export const SkillListItemSpan = styled.span`
 
 export const CheckIcon = styled(Check)`
   display: inline-block;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primaryColor};
 `;
 
 export const CodingIcon = styled(CodeAlt)`

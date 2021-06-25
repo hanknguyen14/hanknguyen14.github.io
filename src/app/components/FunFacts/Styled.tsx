@@ -28,7 +28,7 @@ export const FunFactIcon = styled.div`
   height: 60px;
   text-align: center;
   font-size: 32px;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primaryColor};
 `;
 
 export const FunFactName = styled.div`

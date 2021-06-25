@@ -26,7 +26,6 @@ export const CardInner = styled.div`
   transition: visibility 1s linear, opacity 0s linear;
   -moz-transition: visibility 1s linear, opacity 0s linear;
   -o-transition: visibility 1s linear, opacity 0s linear;
-  border: 1px solid black;
 
   &:before,
   &:after {
