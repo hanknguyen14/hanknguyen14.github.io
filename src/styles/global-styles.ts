@@ -50,7 +50,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
-    color: #888888;
+    color: ${({ theme }) => theme.textColor};
     letter-spacing: 0em;
     font-weight: 400;
     -webkit-text-size-adjust: 100%;

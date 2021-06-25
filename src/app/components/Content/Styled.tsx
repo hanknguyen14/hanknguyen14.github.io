@@ -178,7 +178,7 @@ export const StyledButton = css`
   width: auto;
   height: 50px;
   line-height: 50px;
-  background: ${({ theme }) => theme.colors.softGrey};
+  background: ${({ theme }) => theme.buttonBackground};
   border-radius: 4px;
   cursor: pointer;
 

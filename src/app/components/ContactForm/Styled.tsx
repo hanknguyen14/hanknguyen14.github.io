@@ -18,7 +18,7 @@ const StyledField = css`
   font-family: 'Poppins';
   width: 100%;
   height: 50px;
-  color: ${({ theme }) => theme.colors.dark};
+  color: ${({ theme }) => theme.textColor};
   background: 0 0;
   border: 2px solid ${({ theme }) => theme.colors.softGrey};
   resize: none;

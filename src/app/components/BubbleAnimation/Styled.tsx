@@ -7,10 +7,10 @@ export const BackgroundGradient = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: #3c787e;
+  background: ${({ theme }) => theme.bodyBackgroundGradientFrom};
   background: linear-gradient(
     to bottom right,
-    #3c787e 0%,
+    ${({ theme }) => theme.bodyBackgroundGradientFrom} 0%,
     ${({ theme }) => theme.primaryColor} 100%
   );
 `;
