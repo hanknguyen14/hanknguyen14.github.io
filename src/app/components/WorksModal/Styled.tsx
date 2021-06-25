@@ -9,10 +9,10 @@ export const StyledModal = Modal.styled`
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   height: 100%;
-  background-color: ${({ theme }) => theme.colors.white};
-  z-index: 1043;
+  background-color: ${({ theme }) => theme.bodyBackground};
+  z-index: 30;
   position: fixed;
-  outline: none !important;
+  outline: none;
   left: 0;
   width: 100%;
   margin: 0;

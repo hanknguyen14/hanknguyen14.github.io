@@ -6,14 +6,14 @@
  * contain code that should be seen on all pages. (e.g. navigation bar)
  */
 
-import * as React from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import { GlobalStyle } from 'styles/global-styles';
 import { BaseCSS as GridStyle } from 'styled-bootstrap-grid';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme } from 'styles/theme';
+import { lightTheme, darkTheme } from 'styles/theme';
 import { ModalProvider } from 'styled-react-modal';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
@@ -28,10 +28,14 @@ import { LeftLayout } from './components/LeftLayout/Loadable';
 import { RightLayout } from './components/RightLayout/Loadable';
 import { MainWrapper } from './components/MainWrapper/Loadable';
 import { BubbleAnimation } from './components/BubbleAnimation/Loadable';
+import { ToggleTheme } from './components/ToggleTheme/Loadable';
+import { useDarkMode } from './components/ToggleTheme/useDarkMode';
 import { useTranslation } from 'react-i18next';
 
 export function App() {
   const { i18n } = useTranslation();
+  const [theme, toggleTheme] = useDarkMode();
+
   return (
     <BrowserRouter>
       <Helmet
@@ -46,7 +50,8 @@ export function App() {
         ></meta>
       </Helmet>
 
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+        <ToggleTheme theme={theme} toggleTheme={toggleTheme} />
         <ModalProvider>
           <MainWrapper>
             <LeftLayout>

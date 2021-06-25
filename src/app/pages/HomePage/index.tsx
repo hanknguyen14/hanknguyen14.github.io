@@ -4,7 +4,6 @@ import { Content } from '../../components/Content/Loadable';
 import { About } from '../../components/About/Loadable';
 import { Services } from '../../components/Services/Loadable';
 import { FunFacts } from '../../components/FunFacts/Loadable';
-import { Clients } from '../../components/Clients/Loadable';
 
 export function HomePage() {
   return (
@@ -12,7 +11,6 @@ export function HomePage() {
       <Content>
         <About />
         <Services />
-        <Clients />
         <FunFacts />
       </Content>
     </Wrapper>

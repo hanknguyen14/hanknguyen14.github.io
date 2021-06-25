@@ -26,12 +26,16 @@ exports[`<App /> should render and match the snapshot 1`] = `
     theme={
       Object {
         "bodyBackground": "#ffffff",
+        "bodyBackgroundGradientFrom": "#3c787e",
+        "buttonBackground": "#eeeeee",
         "colors": Object {
           "black": "#000000",
+          "cyan": "#3c787e",
           "dark": "#222222",
+          "darkCyan": "#091236",
           "grey": "#888888",
-          "lightBlack": "#0a0000",
-          "lightGrey": "#bfbfbf",
+          "lightBlack": "#121212",
+          "lightGrey": "#d3d3d3",
           "primary": "#00c483",
           "red": "#ff1d15",
           "semiDark": "#333333",
@@ -42,9 +46,15 @@ exports[`<App /> should render and match the snapshot 1`] = `
         "headingColor": "#222222",
         "primaryColor": "#00c483",
         "textColor": "#888888",
+        "toggleThemeBackground": "linear-gradient(#39598A, #79D7ED)",
+        "toggleThemeBorder": "#ffffff",
       }
     }
   >
+    <Unknown
+      theme="light"
+      toggleTheme={[Function]}
+    />
     <b>
       <Unknown>
         <Unknown>
