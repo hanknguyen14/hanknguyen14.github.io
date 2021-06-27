@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render and match the snapshot 1`] = `
+<BrowserRouter>
+  <Helmet
+    defaultTitle="Manh Hung Nguyen | Developer"
+    defer={true}
+    encodeSpecialCharacters={true}
+    htmlAttributes={
+      Object {
+        "lang": undefined,
+      }
+    }
+    titleTemplate="%s - Manh Hung Nguyen | Developer"
+  >
+    <meta
+      content="Hire Professional Developer - providing multiple services including website development and unique solutions"
+      name="description"
+    />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+  </Helmet>
+  <Unknown
+    theme={
+      Object {
+        "bodyBackground": "#ffffff",
+        "bodyBackgroundGradientFrom": "#3c787e",
+        "buttonBackground": "#eeeeee",
+        "colors": Object {
+          "black": "#000000",
+          "cyan": "#3c787e",
+          "dark": "#222222",
+          "darkCyan": "#091236",
+          "grey": "#888888",
+          "lightBlack": "#121212",
+          "lightGrey": "#d3d3d3",
+          "primary": "#00c483",
+          "red": "#ff1d15",
+          "semiDark": "#333333",
+          "semiGrey": "#555555",
+          "softGrey": "#eeeeee",
+          "white": "#ffffff",
+        },
+        "headingColor": "#222222",
+        "primaryColor": "#00c483",
+        "textColor": "#888888",
+        "toggleThemeBackground": "linear-gradient(#39598A, #79D7ED)",
+        "toggleThemeBorder": "#ffffff",
+      }
+    }
+  >
+    <Unknown
+      theme="light"
+      toggleTheme={[Function]}
+    />
+    <b>
+      <Unknown>
+        <Unknown>
+          <Unknown />
+          <Unknown />
+        </Unknown>
+        <Unknown>
+          <Route
+            render={[Function]}
+          />
+        </Unknown>
+      </Unknown>
+    </b>
+    <Memo(l) />
+    <Memo(l) />
+    <Unknown />
+  </Unknown>
+</BrowserRouter>
+`;
