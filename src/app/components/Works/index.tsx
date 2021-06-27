@@ -95,7 +95,7 @@ export function Works() {
   };
 
   const renderWorkItems = works.map(({ id, image, title }) => (
-    <WorkCol sm={12} md={6} lg={6}>
+    <WorkCol sm={12} md={6} lg={6} key={id}>
       <BoxItem>
         <BoxItemImageWrapper>
           <BoxItemImageLink onClick={() => handleClick(id)}>
