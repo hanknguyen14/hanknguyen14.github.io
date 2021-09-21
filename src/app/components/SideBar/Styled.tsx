@@ -1,5 +1,20 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { media } from 'styles/media';
+
+type SideBarType = {
+  isScrolled: boolean;
+};
+
+const slideIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 export const Wrapper = styled.header`
   display: flex;
@@ -16,9 +31,13 @@ export const Wrapper = styled.header`
   z-index: 20;
   text-align: center;
   border-radius: 4px;
-  margin-right: 10px;
   height: max-content;
-  position: absolute;
+  position: ${(props: SideBarType) =>
+    props.isScrolled ? 'fixed' : 'absolute'};
+  top: ${(props: SideBarType) => (props.isScrolled ? 0 : 'unset')};
+  left: ${(props: SideBarType) => (props.isScrolled ? 0 : 'unset')};
+  animation: ${(props: SideBarType) => (props.isScrolled ? slideIn : 'unset')}
+    1s;
 
   ${media.medium`
     width: 72px;
@@ -26,5 +45,6 @@ export const Wrapper = styled.header`
     flex-direction: column;
     position: unset;
     justify-content: space-between;
-  `}
+    margin-right: 10px;
+  `};
 `;

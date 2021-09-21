@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { Col } from 'styled-bootstrap-grid';
 
-export const ColWrapper = styled(Col)``;
+export const ColWrapper = styled(Col)`
+  height: 100%;
+`;
 
 export const ContentWrapper = styled.div`
   display: flex;
